@@ -86,16 +86,7 @@ function phoneLine() {
     }
 }
 
-document.getElementById('submitForm').addEventListener('click',function (e) {
-    e.preventDefault();
-    const gender = document.getElementsByName('gender')
-    let genderValue;
-    gender.forEach(i => {
-        if(i.checked){
-            genderValue = i.value
-        }
-    });
-    alert(genderValue)
+
 
 
 function lname() {
@@ -114,6 +105,17 @@ function lname() {
     }
       
 }    
+
+document.getElementById('submitForm').addEventListener('click',function (e) {
+    e.preventDefault();
+    const gender = document.getElementsByName('gender')
+    let genderValue;
+    gender.forEach(i => {
+        if(i.checked){
+            genderValue = i.value
+        }
+    });
+    alert(genderValue)
 
     const firstNameField = fNname();
     const lastNameFIeld = lname();
